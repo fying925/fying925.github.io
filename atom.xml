@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>armour</title>
+  <icon>https://fying925.github.io/icon.png</icon>
+  <subtitle>fying925</subtitle>
+  <link href="https://fying925.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://fying925.github.io/"/>
+  <updated>2023-03-29T13:46:54.574Z</updated>
+  <id>https://fying925.github.io/</id>
+  
+  <author>
+    <name>fying925</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Redis</title>
+    <link href="https://fying925.github.io/posts/bae4ff13.html"/>
+    <id>https://fying925.github.io/posts/bae4ff13.html</id>
+    <published>2023-03-29T02:53:44.000Z</published>
+    <updated>2023-03-29T13:46:54.574Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一、概述&quot;&gt;&lt;a href=&quot;#一、概述&quot; class=&quot;headerlink&quot; title=&quot;一、概述&quot;&gt;&lt;/a&gt;一、概述&lt;/h1&gt;&lt;p&gt;Redis</summary>
+        
+      
+    
+    
+    
+    <category term="Redis" scheme="https://fying925.github.io/categories/Redis/"/>
+    
+    
+    <category term="Redis" scheme="https://fying925.github.io/tags/Redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux</title>
+    <link href="https://fying925.github.io/posts/53d0684b.html"/>
+    <id>https://fying925.github.io/posts/53d0684b.html</id>
+    <published>2023-03-29T02:53:33.000Z</published>
+    <updated>2023-03-29T13:46:46.585Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;为了便于理解，本文从常用操作和概念开始讲起。虽然已经尽量做到简化，但是涉及到的内容还是有点多。在面试中，Linux</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://fying925.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://fying925.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker</title>
+    <link href="https://fying925.github.io/posts/f5f9fa9b.html"/>
+    <id>https://fying925.github.io/posts/f5f9fa9b.html</id>
+    <published>2023-03-29T02:53:17.000Z</published>
+    <updated>2023-03-29T13:47:02.108Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一、解决的问题&quot;&gt;&lt;a href=&quot;#一、解决的问题&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://fying925.github.io/categories/Docker/"/>
+    
+    
+    <category term="Docker" scheme="https://fying925.github.io/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git</title>
+    <link href="https://fying925.github.io/posts/69c3279c.html"/>
+    <id>https://fying925.github.io/posts/69c3279c.html</id>
+    <published>2023-03-29T02:52:52.000Z</published>
+    <updated>2023-03-29T13:47:09.969Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;集中式与分布式&quot;&gt;&lt;a href=&quot;#集中式与分布式&quot; class=&quot;headerlink&quot; title=&quot;集中式与分布式&quot;&gt;&lt;/a&gt;集中式与分布式&lt;/h1&gt;&lt;p&gt;Git 属于分布式版本控制系统，而 SVN 属于集中式。&lt;/p&gt;
+&lt;div</summary>
+        
+      
+    
+    
+    
+    <category term="Git" scheme="https://fying925.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://fying925.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL</title>
+    <link href="https://fying925.github.io/posts/c24675b4.html"/>
+    <id>https://fying925.github.io/posts/c24675b4.html</id>
+    <published>2023-03-29T01:37:55.000Z</published>
+    <updated>2023-03-29T13:47:29.500Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一、索引&quot;&gt;&lt;a href=&quot;#一、索引&quot; class=&quot;headerlink&quot; title=&quot;一、索引&quot;&gt;&lt;/a&gt;一、索引&lt;/h1&gt;&lt;h2 id=&quot;B-Tree-原理&quot;&gt;&lt;a href=&quot;#B-Tree-原理&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="MySQL" scheme="https://fying925.github.io/categories/MySQL/"/>
+    
+    
+    <category term="MySQL" scheme="https://fying925.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL</title>
+    <link href="https://fying925.github.io/posts/dbd66adf.html"/>
+    <id>https://fying925.github.io/posts/dbd66adf.html</id>
+    <published>2023-03-29T01:24:00.000Z</published>
+    <updated>2023-03-29T13:47:24.602Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一、基础&quot;&gt;&lt;a href=&quot;#一、基础&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="SQL" scheme="https://fying925.github.io/categories/SQL/"/>
+    
+    
+    <category term="SQL" scheme="https://fying925.github.io/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>EXCEL</title>
+    <link href="https://fying925.github.io/posts/2f6440bb.html"/>
+    <id>https://fying925.github.io/posts/2f6440bb.html</id>
+    <published>2023-03-29T01:06:02.000Z</published>
+    <updated>2023-03-29T13:47:16.335Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;1-第一项多个工作薄合并宏代码&quot;&gt;&lt;a href=&quot;#1-第一项多个工作薄合并宏代码&quot; class=&quot;headerlink&quot; title=&quot;1.第一项多个工作薄合并宏代码&quot;&gt;&lt;/a&gt;1.第一项多个工作薄合并宏代码&lt;/h3&gt;&lt;figure</summary>
+        
+      
+    
+    
+    
+    <category term="EXCEL" scheme="https://fying925.github.io/categories/EXCEL/"/>
+    
+    
+    <category term="EXCEL" scheme="https://fying925.github.io/tags/EXCEL/"/>
+    
+  </entry>
+  
+</feed>
