@@ -21,28 +21,37 @@ B+ Tree 是基于 B Tree 和叶子节点顺序访问指针进行实现，它具�
 
 
     <title>MySQL | armour</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/favicon.png">
     
+    <style>
+        body{
+            background-image: url(https://pic.imgdb.cn/item/6476de6ff024cca173833afa.jpg);
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            background-attachment:fixed;
+        }
+    </style>
+
 
 
     <!-- bg-cover style     -->
 
 
 
-<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-<link rel="stylesheet" type="text/css" href="/css/matery.css">
-<link rel="stylesheet" type="text/css" href="/css/my.css">
-<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/css/matery.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/css/my.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/css/dark.css" media="none" onload="if(media!='all')media='all'">
 
 
 
 
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-    <link rel="stylesheet" href="/css/post.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/css/post.css">
 
 
 
@@ -51,11 +60,12 @@ B+ Tree 是基于 B Tree 和叶子节点顺序访问指针进行实现，它具�
 
 
 
-    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/jquery/jquery-3.6.0.min.js"></script>
    
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="armour" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -65,7 +75,7 @@ B+ Tree 是基于 B Tree 和叶子节点顺序访问指针进行实现，它具�
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">armour</span>
                 </a>
@@ -147,7 +157,7 @@ B+ Tree 是基于 B Tree 和叶子节点顺序访问指针进行实现，它具�
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">armour</div>
         <div class="logo-desc">
@@ -375,24 +385,24 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
 <p>必须使用 GIS 相关的函数来维护数据。</p>
 <h2 id="索引优化"><a href="#索引优化" class="headerlink" title="索引优化"></a>索引优化</h2><h3 id="1-独立的列"><a href="#1-独立的列" class="headerlink" title="1. 独立的列"></a>1. 独立的列</h3><p>在进行查询时，索引列不能是表达式的一部分，也不能是函数的参数，否则无法使用索引。</p>
 <p>例如下面的查询不能使用 actor_id 列的索引：</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> actor_id <span class="token keyword">FROM</span> sakila<span class="token punctuation">.</span>actor <span class="token keyword">WHERE</span> actor_id <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
-</code></pre>
+<pre class="line-numbers language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> actor_id <span class="token keyword">FROM</span> sakila<span class="token punctuation">.</span>actor <span class="token keyword">WHERE</span> actor_id <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="2-多列索引"><a href="#2-多列索引" class="headerlink" title="2. 多列索引"></a>2. 多列索引</h3><p>在需要使用多个列作为条件进行查询时，使用多列索引比使用多个单列索引性能更好。例如下面的语句中，最好把 actor_id 和 film_id 设置为多列索引。</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> film_id<span class="token punctuation">,</span> actor_ id <span class="token keyword">FROM</span> sakila<span class="token punctuation">.</span>film_actor
+<pre class="line-numbers language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> film_id<span class="token punctuation">,</span> actor_ id <span class="token keyword">FROM</span> sakila<span class="token punctuation">.</span>film_actor
 <span class="token keyword">WHERE</span> actor_id <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">AND</span> film_id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="3-索引列的顺序"><a href="#3-索引列的顺序" class="headerlink" title="3. 索引列的顺序"></a>3. 索引列的顺序</h3><p>让选择性最强的索引列放在前面。</p>
 <p>索引的选择性是指：不重复的索引值和记录总数的比值。最大值为 1，此时每个记录都有唯一的索引与其对应。选择性越高，每个记录的区分度越高，查询效率也越高。</p>
 <p>例如下面显示的结果中 customer_id 的选择性比 staff_id 更高，因此最好把 customer_id 列放在多列索引的前面。</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token keyword">DISTINCT</span> staff_id<span class="token punctuation">)</span><span class="token operator">/</span><span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> staff_id_selectivity<span class="token punctuation">,</span>
+<pre class="line-numbers language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token keyword">DISTINCT</span> staff_id<span class="token punctuation">)</span><span class="token operator">/</span><span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> staff_id_selectivity<span class="token punctuation">,</span>
 <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token keyword">DISTINCT</span> customer_id<span class="token punctuation">)</span><span class="token operator">/</span><span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> customer_id_selectivity<span class="token punctuation">,</span>
 <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span>
 <span class="token keyword">FROM</span> payment<span class="token punctuation">;</span>
-</code></pre>
-<pre class=" language-html"><code class="language-html">   staff_id_selectivity: 0.0001
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-html"><code class="language-html">   staff_id_selectivity: 0.0001
 customer_id_selectivity: 0.0373
                COUNT(*): 16049
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h3 id="4-前缀索引"><a href="#4-前缀索引" class="headerlink" title="4. 前缀索引"></a>4. 前缀索引</h3><p>对于 BLOB、TEXT 和 VARCHAR 类型的列，必须使用前缀索引，只索引开始的部分字符。</p>
 <p>前缀长度的选取需要根据索引选择性来确定。</p>
 <h3 id="5-覆盖索引"><a href="#5-覆盖索引" class="headerlink" title="5. 覆盖索引"></a>5. 覆盖索引</h3><p>索引包含所有需要查询的字段的值。</p>
@@ -432,14 +442,14 @@ customer_id_selectivity: 0.0373
 </ul>
 <h3 id="2-减少服务器端扫描的行数"><a href="#2-减少服务器端扫描的行数" class="headerlink" title="2. 减少服务器端扫描的行数"></a>2. 减少服务器端扫描的行数</h3><p>最有效的方式是使用索引来覆盖查询。</p>
 <h2 id="重构查询方式"><a href="#重构查询方式" class="headerlink" title="重构查询方式"></a>重构查询方式</h2><h3 id="1-切分大查询"><a href="#1-切分大查询" class="headerlink" title="1. 切分大查询"></a>1. 切分大查询</h3><p>一个大查询如果一次性执行的话，可能一次锁住很多数据、占满整个事务日志、耗尽系统资源、阻塞很多小的但重要的查询。</p>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> messages <span class="token keyword">WHERE</span> <span class="token keyword">create</span> <span class="token operator">&lt;</span> DATE_SUB<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> INTERVAL <span class="token number">3</span> MONTH<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-<pre class=" language-sql"><code class="language-sql">rows_affected <span class="token operator">=</span> <span class="token number">0</span>
+<pre class="line-numbers language-sql"><code class="language-sql"><span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> messages <span class="token keyword">WHERE</span> <span class="token keyword">create</span> <span class="token operator">&lt;</span> DATE_SUB<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> INTERVAL <span class="token number">3</span> MONTH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-sql"><code class="language-sql">rows_affected <span class="token operator">=</span> <span class="token number">0</span>
 <span class="token keyword">do</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
     rows_affected <span class="token operator">=</span> do_query<span class="token punctuation">(</span>
     <span class="token string">"DELETE FROM messages WHERE create  &lt; DATE_SUB(NOW(), INTERVAL 3 MONTH) LIMIT 10000"</span><span class="token punctuation">)</span>
 <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125; while rows_affected > 0</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="2-分解大连接查询"><a href="#2-分解大连接查询" class="headerlink" title="2. 分解大连接查询"></a>2. 分解大连接查询</h3><p>将一个大连接查询分解成对每一个表进行一次单表查询，然后在应用程序中进行关联，这样做的好处有：</p>
 <ul>
 <li>让缓存更高效。对于连接查询，如果其中一个表发生变化，那么整个查询缓存就无法使用。而分解后的多个查询，即使其中一个表发生变化，对其它表的查询缓存依然可以使用。</li>
@@ -448,15 +458,15 @@ customer_id_selectivity: 0.0373
 <li>在应用层进行连接，可以更容易对数据库进行拆分，从而更容易做到高性能和可伸缩。</li>
 <li>查询本身效率也可能会有所提升。例如下面的例子中，使用 IN() 代替连接查询，可以让 MySQL 按照 ID 顺序进行查询，这可能比随机的连接要更高效。</li>
 </ul>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> tag
+<pre class="line-numbers language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> tag
 <span class="token keyword">JOIN</span> tag_post <span class="token keyword">ON</span> tag_post<span class="token punctuation">.</span>tag_id<span class="token operator">=</span>tag<span class="token punctuation">.</span>id
 <span class="token keyword">JOIN</span> post <span class="token keyword">ON</span> tag_post<span class="token punctuation">.</span>post_id<span class="token operator">=</span>post<span class="token punctuation">.</span>id
 <span class="token keyword">WHERE</span> tag<span class="token punctuation">.</span>tag<span class="token operator">=</span><span class="token string">'mysql'</span><span class="token punctuation">;</span>
-</code></pre>
-<pre class=" language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> tag <span class="token keyword">WHERE</span> tag<span class="token operator">=</span><span class="token string">'mysql'</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-sql"><code class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> tag <span class="token keyword">WHERE</span> tag<span class="token operator">=</span><span class="token string">'mysql'</span><span class="token punctuation">;</span>
 <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> tag_post <span class="token keyword">WHERE</span> tag_id<span class="token operator">=</span><span class="token number">1234</span><span class="token punctuation">;</span>
 <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> post <span class="token keyword">WHERE</span> post<span class="token punctuation">.</span>id <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">,</span><span class="token number">456</span><span class="token punctuation">,</span><span class="token number">567</span><span class="token punctuation">,</span><span class="token number">9098</span><span class="token punctuation">,</span><span class="token number">8904</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h1 id="三、存储引擎"><a href="#三、存储引擎" class="headerlink" title="三、存储引擎"></a>三、存储引擎</h1><h2 id="InnoDB"><a href="#InnoDB" class="headerlink" title="InnoDB"></a>InnoDB</h2><p>是 MySQL 默认的事务型存储引擎，只有在需要它不支持的特性时，才考虑使用其它存储引擎。</p>
 <p>实现了四个标准的隔离级别，默认级别是可重复读（REPEATABLE READ）。在可重复读隔离级别下，通过多版本并发控制（MVCC）+ Next-Key Locking 防止幻影读。</p>
 <p>主索引是聚簇索引，在索引中保存了数据，从而避免直接读取磁盘，因此对查询性能有很大的提升。</p>
@@ -571,12 +581,12 @@ customer_id_selectivity: 0.0373
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/libs/share/js/social-share.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -749,23 +759,23 @@ customer_id_selectivity: 0.0373
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/codeBlock/codeBlockFuction.js"></script>
 
 
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
 
@@ -787,7 +797,7 @@ customer_id_selectivity: 0.0373
 </div>
 
 
-<script src="/libs/tocbot/tocbot.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -859,7 +869,7 @@ customer_id_selectivity: 0.0373
 
     <footer class="page-footer bg-color">
     
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/aplayer/APlayer.min.css">
 <style>
     .aplayer .aplayer-lrc p {
         
@@ -875,7 +885,7 @@ customer_id_selectivity: 0.0373
         display: none;
         
         font-size: 15px;
-        color: #42b983;
+        color: #2980b9;
     }
 
     
@@ -898,9 +908,9 @@ customer_id_selectivity: 0.0373
                    id="8304802843"
                    fixed='true'
                    autoplay='false'
-                   theme='#42b983'
+                   theme='#2980b9'
                    loop='all'
-                   order='random'
+                   order='list'
                    preload='auto'
                    volume='0.7'
                    list-folded='true'
@@ -909,8 +919,8 @@ customer_id_selectivity: 0.0373
     </div>
 </div>
 
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/aplayer/Meting.min.js"></script>
 
     
 
@@ -960,8 +970,8 @@ customer_id_selectivity: 0.0373
                         var years = days * 365;
                         var today = new Date();
                         var startYear = "2023";
-                        var startMonth = "3";
-                        var startDate = "28";
+                        var startMonth = "1";
+                        var startDate = "7";
                         var startHour = "0";
                         var startMinute = "0";
                         var startSecond = "0";
@@ -1183,12 +1193,12 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/materialize/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/aos/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/js/matery.js"></script>
 
     
 
@@ -1223,10 +1233,10 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/others/clicklove.js" async="async"></script>
     
     
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1239,7 +1249,7 @@ $(function () {
     <script type="text/javascript" color="0,0,255"
         pointColor="0,0,255" opacity='0.7'
         zIndex="-1" count="99"
-        src="/libs/background/canvas-nest.js"></script>
+        src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/background/canvas-nest.js"></script>
     
 
     
@@ -1247,7 +1257,7 @@ $(function () {
     
 
     
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/instantpage/instantpage.js" type="module"></script>
     
 
     <script type="text/javascript">

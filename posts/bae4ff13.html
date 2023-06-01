@@ -22,28 +22,37 @@ Redis 支持很多特性，例如将内存中">
 
 
     <title>Redis | armour</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/favicon.png">
     
+    <style>
+        body{
+            background-image: url(https://pic.imgdb.cn/item/6476de6ff024cca173833afa.jpg);
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            background-attachment:fixed;
+        }
+    </style>
+
 
 
     <!-- bg-cover style     -->
 
 
 
-<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-<link rel="stylesheet" type="text/css" href="/css/matery.css">
-<link rel="stylesheet" type="text/css" href="/css/my.css">
-<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/css/matery.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/css/my.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/css/dark.css" media="none" onload="if(media!='all')media='all'">
 
 
 
 
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-    <link rel="stylesheet" href="/css/post.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/css/post.css">
 
 
 
@@ -52,11 +61,12 @@ Redis 支持很多特性，例如将内存中">
 
 
 
-    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/jquery/jquery-3.6.0.min.js"></script>
    
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="armour" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -66,7 +76,7 @@ Redis 支持很多特性，例如将内存中">
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">armour</span>
                 </a>
@@ -148,7 +158,7 @@ Redis 支持很多特性，例如将内存中">
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">armour</div>
         <div class="logo-desc">
@@ -378,7 +388,7 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
 </blockquote>
 <h2 id="STRING"><a href="#STRING" class="headerlink" title="STRING"></a>STRING</h2><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/6019b2db-bc3e-4408-b6d8-96025f4481d6.png" width="400"/> </div><br>
 
-<pre class=" language-html"><code class="language-html">> set hello world
+<pre class="line-numbers language-html"><code class="language-html">> set hello world
 OK
 > get hello
 "world"
@@ -386,10 +396,10 @@ OK
 (integer) 1
 > get hello
 (nil)
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="LIST"><a href="#LIST" class="headerlink" title="LIST"></a>LIST</h2><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/fb327611-7e2b-4f2f-9f5b-38592d408f07.png" width="400"/> </div><br>
 
-<pre class=" language-html"><code class="language-html">> rpush list-key item
+<pre class="line-numbers language-html"><code class="language-html">> rpush list-key item
 (integer) 1
 > rpush list-key item2
 (integer) 2
@@ -410,10 +420,10 @@ OK
 > lrange list-key 0 -1
 1) "item2"
 2) "item"
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="SET"><a href="#SET" class="headerlink" title="SET"></a>SET</h2><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/cd5fbcff-3f35-43a6-8ffa-082a93ce0f0e.png" width="400"/> </div><br>
 
-<pre class=" language-html"><code class="language-html">> sadd set-key item
+<pre class="line-numbers language-html"><code class="language-html">> sadd set-key item
 (integer) 1
 > sadd set-key item2
 (integer) 1
@@ -440,10 +450,10 @@ OK
 > smembers set-key
 1) "item"
 2) "item3"
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="HASH"><a href="#HASH" class="headerlink" title="HASH"></a>HASH</h2><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/7bd202a7-93d4-4f3a-a878-af68ae25539a.png" width="400"/> </div><br>
 
-<pre class=" language-html"><code class="language-html">> hset hash-key sub-key1 value1
+<pre class="line-numbers language-html"><code class="language-html">> hset hash-key sub-key1 value1
 (integer) 1
 > hset hash-key sub-key2 value2
 (integer) 1
@@ -467,10 +477,10 @@ OK
 > hgetall hash-key
 1) "sub-key1"
 2) "value1"
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="ZSET"><a href="#ZSET" class="headerlink" title="ZSET"></a>ZSET</h2><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/1202b2d6-9469-4251-bd47-ca6034fb6116.png" width="400"/> </div><br>
 
-<pre class=" language-html"><code class="language-html">> zadd zset-key 728 member1
+<pre class="line-numbers language-html"><code class="language-html">> zadd zset-key 728 member1
 (integer) 1
 > zadd zset-key 982 member0
 (integer) 1
@@ -495,9 +505,9 @@ OK
 > zrange zset-key 0 -1 withscores
 1) "member0"
 2) "982"
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h1 id="三、数据结构"><a href="#三、数据结构" class="headerlink" title="三、数据结构"></a>三、数据结构</h1><h2 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h2><p>dictht 是一个散列表结构，使用拉链法解决哈希冲突。</p>
-<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">/* This is our hash table structure. Every dictionary has two of this as we
+<pre class="line-numbers language-c"><code class="language-c"><span class="token comment" spellcheck="true">/* This is our hash table structure. Every dictionary has two of this as we
  * implement incremental rehashing, for the old to the new table. */</span>
 <span class="token keyword">typedef</span> <span class="token keyword">struct</span> dictht <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     dictEntry <span class="token operator">*</span><span class="token operator">*</span>table<span class="token punctuation">;</span>
@@ -505,8 +515,8 @@ OK
     <span class="token keyword">unsigned</span> <span class="token keyword">long</span> sizemask<span class="token punctuation">;</span>
     <span class="token keyword">unsigned</span> <span class="token keyword">long</span> used<span class="token punctuation">;</span>
 <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> dictht<span class="token punctuation">;</span>
-</code></pre>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">typedef</span> <span class="token keyword">struct</span> dictEntry <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token keyword">typedef</span> <span class="token keyword">struct</span> dictEntry <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">void</span> <span class="token operator">*</span>key<span class="token punctuation">;</span>
     <span class="token keyword">union</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">void</span> <span class="token operator">*</span>val<span class="token punctuation">;</span>
@@ -516,21 +526,21 @@ OK
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> v<span class="token punctuation">;</span>
     <span class="token keyword">struct</span> dictEntry <span class="token operator">*</span>next<span class="token punctuation">;</span>
 <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> dictEntry<span class="token punctuation">;</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>Redis 的字典 dict 中包含两个哈希表 dictht，这是为了方便进行 rehash 操作。在扩容时，将其中一个 dictht 上的键值对 rehash 到另一个 dictht 上面，完成之后释放空间并交换两个 dictht 的角色。</p>
-<pre class=" language-c"><code class="language-c"><span class="token keyword">typedef</span> <span class="token keyword">struct</span> dict <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token keyword">typedef</span> <span class="token keyword">struct</span> dict <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     dictType <span class="token operator">*</span>type<span class="token punctuation">;</span>
     <span class="token keyword">void</span> <span class="token operator">*</span>privdata<span class="token punctuation">;</span>
     dictht ht<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token keyword">long</span> rehashidx<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* rehashing not in progress if rehashidx == -1 */</span>
     <span class="token keyword">unsigned</span> <span class="token keyword">long</span> iterators<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* number of iterators currently running */</span>
 <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> dict<span class="token punctuation">;</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>rehash 操作不是一次性完成，而是采用渐进方式，这是为了避免一次性执行过多的 rehash 操作给服务器带来过大的负担。</p>
 <p>渐进式 rehash 通过记录 dict 的 rehashidx 完成，它从 0 开始，然后每执行一次 rehash 都会递增。例如在一次 rehash 中，要把 dict[0] rehash 到 dict[1]，这一次会把 dict[0] 上 table[rehashidx] 的键值对 rehash 到 dict[1] 上，dict[0] 的 table[rehashidx] 指向 null，并令 rehashidx++。</p>
 <p>在 rehash 期间，每次对字典执行添加、删除、查找或者更新操作时，都会执行一次渐进式 rehash。</p>
 <p>采用渐进式 rehash 会导致字典中的数据分散在两个 dictht 上，因此对字典的查找操作也需要到对应的 dictht 去执行。</p>
-<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">/* Performs N steps of incremental rehashing. Returns 1 if there are still
+<pre class="line-numbers language-c"><code class="language-c"><span class="token comment" spellcheck="true">/* Performs N steps of incremental rehashing. Returns 1 if there are still
  * keys to move from the old to the new hash table, otherwise 0 is returned.
  *
  * Note that a rehashing step consists in moving a bucket (that may have more
@@ -583,7 +593,7 @@ OK
     <span class="token comment" spellcheck="true">/* More to rehash... */</span>
     <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
 <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="跳跃表"><a href="#跳跃表" class="headerlink" title="跳跃表"></a>跳跃表</h2><p>是有序集合的底层实现之一。</p>
 <p>跳跃表是基于多指针有序链表实现的，可以看成多个有序链表。</p>
 <div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/beba612e-dc5b-4fc2-869d-0b23408ac90a.png" width="600px"/> </div><br>
@@ -710,7 +720,7 @@ OK
 <p>Redis 将所有时间事件都放在一个无序链表中，通过遍历整个链表查找出已到达的时间事件，并调用相应的事件处理器。</p>
 <h2 id="事件的调度与执行"><a href="#事件的调度与执行" class="headerlink" title="事件的调度与执行"></a>事件的调度与执行</h2><p>服务器需要不断监听文件事件的套接字才能得到待处理的文件事件，但是不能一直监听，否则时间事件无法在规定的时间内执行，因此监听时间应该根据距离现在最近的时间事件来决定。</p>
 <p>事件调度与执行由 aeProcessEvents 函数负责，伪代码如下：</p>
-<pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">aeProcessEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">aeProcessEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token comment" spellcheck="true"># 获取到达时间离当前时间最接近的时间事件</span>
     time_event <span class="token operator">=</span> aeSearchNearestTimer<span class="token punctuation">(</span><span class="token punctuation">)</span>
     <span class="token comment" spellcheck="true"># 计算最接近的时间事件距离到达还有多少毫秒</span>
@@ -726,9 +736,9 @@ OK
     procesFileEvents<span class="token punctuation">(</span><span class="token punctuation">)</span>
     <span class="token comment" spellcheck="true"># 处理所有已到达的时间事件</span>
     processTimeEvents<span class="token punctuation">(</span><span class="token punctuation">)</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>将 aeProcessEvents 函数置于一个循环里面，加上初始化和清理函数，就构成了 Redis 服务器的主函数，伪代码如下：</p>
-<pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token comment" spellcheck="true"># 初始化服务器</span>
     init_server<span class="token punctuation">(</span><span class="token punctuation">)</span>
     <span class="token comment" spellcheck="true"># 一直处理事件，直到服务器关闭为止</span>
@@ -736,7 +746,7 @@ OK
         aeProcessEvents<span class="token punctuation">(</span><span class="token punctuation">)</span>
     <span class="token comment" spellcheck="true"># 服务器关闭，执行清理操作</span>
     clean_server<span class="token punctuation">(</span><span class="token punctuation">)</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>从事件处理的角度来看，服务器运行流程如下：</p>
 <div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/c0a9fa91-da2e-4892-8c9f-80206a6f7047.png" width="350"/> </div><br>
 
@@ -815,12 +825,12 @@ OK
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/libs/share/js/social-share.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -903,15 +913,15 @@ OK
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/bae4ff13.html">
+                <a href="/posts/98795dfa.html">
                     <div class="card-image">
                         
-                        <img src="https://pic.imgdb.cn/item/6476de5ff024cca1738320b3.jpg" class="responsive-img" alt="Redis">
+                        <img src="https://pic.imgdb.cn/item/6476de5ff024cca173832063.jpg" class="responsive-img" alt="Hexo博客主题之hexo-theme-matery的介绍">
                         
-                        <span class="card-title">Redis</span>
+                        <span class="card-title">Hexo博客主题之hexo-theme-matery的介绍</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -922,26 +932,25 @@ OK
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-07
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Redis/" class="post-category">
-                                    Redis
+                            <a href="/categories/hexo/" class="post-category">
+                                    hexo
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Redis/">
-                        <span class="chip bg-color">Redis</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -994,23 +1003,23 @@ OK
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/codeBlock/codeBlockFuction.js"></script>
 
 
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
 
@@ -1032,7 +1041,7 @@ OK
 </div>
 
 
-<script src="/libs/tocbot/tocbot.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -1104,7 +1113,7 @@ OK
 
     <footer class="page-footer bg-color">
     
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/aplayer/APlayer.min.css">
 <style>
     .aplayer .aplayer-lrc p {
         
@@ -1120,7 +1129,7 @@ OK
         display: none;
         
         font-size: 15px;
-        color: #42b983;
+        color: #2980b9;
     }
 
     
@@ -1143,9 +1152,9 @@ OK
                    id="8304802843"
                    fixed='true'
                    autoplay='false'
-                   theme='#42b983'
+                   theme='#2980b9'
                    loop='all'
-                   order='random'
+                   order='list'
                    preload='auto'
                    volume='0.7'
                    list-folded='true'
@@ -1154,8 +1163,8 @@ OK
     </div>
 </div>
 
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/aplayer/Meting.min.js"></script>
 
     
 
@@ -1205,8 +1214,8 @@ OK
                         var years = days * 365;
                         var today = new Date();
                         var startYear = "2023";
-                        var startMonth = "3";
-                        var startDate = "28";
+                        var startMonth = "1";
+                        var startDate = "7";
                         var startHour = "0";
                         var startMinute = "0";
                         var startSecond = "0";
@@ -1428,12 +1437,12 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/materialize/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/aos/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/js/matery.js"></script>
 
     
 
@@ -1468,10 +1477,10 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/others/clicklove.js" async="async"></script>
     
     
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1484,7 +1493,7 @@ $(function () {
     <script type="text/javascript" color="0,0,255"
         pointColor="0,0,255" opacity='0.7'
         zIndex="-1" count="99"
-        src="/libs/background/canvas-nest.js"></script>
+        src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/background/canvas-nest.js"></script>
     
 
     
@@ -1492,7 +1501,7 @@ $(function () {
     
 
     
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/instantpage/instantpage.js" type="module"></script>
     
 
     <script type="text/javascript">

@@ -20,28 +20,37 @@
 
 
     <title>Linux | armour</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/favicon.png">
     
+    <style>
+        body{
+            background-image: url(https://pic.imgdb.cn/item/6476de6ff024cca173833afa.jpg);
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            background-attachment:fixed;
+        }
+    </style>
+
 
 
     <!-- bg-cover style     -->
 
 
 
-<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-<link rel="stylesheet" type="text/css" href="/css/matery.css">
-<link rel="stylesheet" type="text/css" href="/css/my.css">
-<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/css/matery.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/css/my.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/css/dark.css" media="none" onload="if(media!='all')media='all'">
 
 
 
 
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-    <link rel="stylesheet" href="/css/post.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/css/post.css">
 
 
 
@@ -50,11 +59,12 @@
 
 
 
-    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/jquery/jquery-3.6.0.min.js"></script>
    
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 <meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="armour" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -64,7 +74,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">armour</span>
                 </a>
@@ -146,7 +156,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">armour</div>
         <div class="logo-desc">
@@ -373,15 +383,15 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
 <h3 id="4-doc"><a href="#4-doc" class="headerlink" title="4. doc"></a>4. doc</h3><p>&#x2F;usr&#x2F;share&#x2F;doc 存放着软件的一整套说明文件。</p>
 <h2 id="关机"><a href="#关机" class="headerlink" title="关机"></a>关机</h2><h3 id="1-who"><a href="#1-who" class="headerlink" title="1. who"></a>1. who</h3><p>在关机前需要先使用 who 命令查看有没有其它用户在线。</p>
 <h3 id="2-sync"><a href="#2-sync" class="headerlink" title="2. sync"></a>2. sync</h3><p>为了加快对磁盘文件的读写速度，位于内存中的文件数据不会立即同步到磁盘，因此关机之前需要先进行 sync 同步操作。</p>
-<h3 id="3-shutdown"><a href="#3-shutdown" class="headerlink" title="3. shutdown"></a>3. shutdown</h3><pre class=" language-html"><code class="language-html"># shutdown [-krhc] 时间 [信息]
+<h3 id="3-shutdown"><a href="#3-shutdown" class="headerlink" title="3. shutdown"></a>3. shutdown</h3><pre class="line-numbers language-html"><code class="language-html"># shutdown [-krhc] 时间 [信息]
 -k ： 不会关机，只是发送警告信息，通知所有在线的用户
 -r ： 将系统的服务停掉后就重新启动
 -h ： 将系统的服务停掉后就立即关机
 -c ： 取消已经在进行的 shutdown
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="PATH"><a href="#PATH" class="headerlink" title="PATH"></a>PATH</h2><p>可以在环境变量 PATH 中声明可执行文件的路径，路径之间用 : 分隔。</p>
-<pre class=" language-html"><code class="language-html">/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/dmtsai/.local/bin:/home/dmtsai/bin
-</code></pre>
+<pre class="line-numbers language-html"><code class="language-html">/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/dmtsai/.local/bin:/home/dmtsai/bin
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="sudo"><a href="#sudo" class="headerlink" title="sudo"></a>sudo</h2><p>sudo 允许一般用户使用 root 可执行的命令，不过只有在 &#x2F;etc&#x2F;sudoers 配置文件中添加的用户才能使用该指令。</p>
 <h2 id="包管理工具"><a href="#包管理工具" class="headerlink" title="包管理工具"></a>包管理工具</h2><p>RPM 和 DPKG 为最常见的两类软件包管理工具：</p>
 <ul>
@@ -599,11 +609,11 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
 <li>access time (atime)：读取文件时就会更新。</li>
 </ul>
 <h2 id="文件与目录的基本操作"><a href="#文件与目录的基本操作" class="headerlink" title="文件与目录的基本操作"></a>文件与目录的基本操作</h2><h3 id="1-ls"><a href="#1-ls" class="headerlink" title="1. ls"></a>1. ls</h3><p>列出文件或者目录的信息，目录的信息就是其中包含的文件。</p>
-<pre class=" language-html"><code class="language-html"># ls [-aAdfFhilnrRSt] file|dir
+<pre class="line-numbers language-html"><code class="language-html"># ls [-aAdfFhilnrRSt] file|dir
 -a ：列出全部的文件
 -d ：仅列出目录本身
 -l ：以长数据串行列出，包含文件的属性与权限等等数据
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="2-cd"><a href="#2-cd" class="headerlink" title="2. cd"></a>2. cd</h3><p>更换当前目录。</p>
 <pre><code>cd [相对路径或绝对路径]
 </code></pre>
@@ -613,19 +623,19 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
 -p ：递归创建目录
 </code></pre>
 <h3 id="4-rmdir"><a href="#4-rmdir" class="headerlink" title="4. rmdir"></a>4. rmdir</h3><p>删除目录，目录必须为空。</p>
-<pre class=" language-html"><code class="language-html">rmdir [-p] 目录名称
+<pre class="line-numbers language-html"><code class="language-html">rmdir [-p] 目录名称
 -p ：递归删除目录
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="5-touch"><a href="#5-touch" class="headerlink" title="5. touch"></a>5. touch</h3><p>更新文件时间或者建立新文件。</p>
-<pre class=" language-html"><code class="language-html"># touch [-acdmt] filename
+<pre class="line-numbers language-html"><code class="language-html"># touch [-acdmt] filename
 -a ： 更新 atime
 -c ： 更新 ctime，若该文件不存在则不建立新文件
 -m ： 更新 mtime
 -d ： 后面可以接更新日期而不使用当前日期，也可以使用 --date="日期或时间"
 -t ： 后面可以接更新时间而不使用当前时间，格式为[YYYYMMDDhhmm]
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="6-cp"><a href="#6-cp" class="headerlink" title="6. cp"></a>6. cp</h3><p>复制文件。如果源文件有两个以上，则目的文件一定要是目录才行。</p>
-<pre class=" language-html"><code class="language-html">cp [-adfilprsu] source destination
+<pre class="line-numbers language-html"><code class="language-html">cp [-adfilprsu] source destination
 -a ：相当于 -dr --preserve=all
 -d ：若来源文件为链接文件，则复制链接文件属性而非文件本身
 -i ：若目标文件已经存在时，在覆盖前会先询问
@@ -633,24 +643,24 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
 -r ：递归复制
 -u ：destination 比 source 旧才更新 destination，或 destination 不存在的情况下才复制
 --preserve=all ：除了 -p 的权限相关参数外，还加入 SELinux 的属性, links, xattr 等也复制了
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="7-rm"><a href="#7-rm" class="headerlink" title="7. rm"></a>7. rm</h3><p>删除文件。</p>
-<pre class=" language-html"><code class="language-html"># rm [-fir] 文件或目录
+<pre class="line-numbers language-html"><code class="language-html"># rm [-fir] 文件或目录
 -r ：递归删除
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="8-mv"><a href="#8-mv" class="headerlink" title="8. mv"></a>8. mv</h3><p>移动文件。</p>
-<pre class=" language-html"><code class="language-html"># mv [-fiu] source destination
+<pre class="line-numbers language-html"><code class="language-html"># mv [-fiu] source destination
 # mv [options] source1 source2 source3 .... directory
 -f ： force 强制的意思，如果目标文件已经存在，不会询问而直接覆盖
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h2 id="修改权限"><a href="#修改权限" class="headerlink" title="修改权限"></a>修改权限</h2><p>可以将一组权限用数字来表示，此时一组权限的 3 个位当做二进制数字的位，从左到右每个位的权值为 4、2、1，即每个权限对应的数字权值为 r : 4、w : 2、x : 1。</p>
-<pre class=" language-html"><code class="language-html"># chmod [-R] xyz dirname/filename
-</code></pre>
+<pre class="line-numbers language-html"><code class="language-html"># chmod [-R] xyz dirname/filename
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>示例：将 .bashrc 文件的权限修改为 -rwxr-xr–。</p>
-<pre class=" language-html"><code class="language-html"># chmod 754 .bashrc
-</code></pre>
+<pre class="line-numbers language-html"><code class="language-html"># chmod 754 .bashrc
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>也可以使用符号来设定权限。</p>
-<pre class=" language-html"><code class="language-html"># chmod [ugoa]  [+-=] [rwx] dirname/filename
+<pre class="line-numbers language-html"><code class="language-html"># chmod [ugoa]  [+-=] [rwx] dirname/filename
 - u：拥有者
 - g：所属群组
 - o：其他人
@@ -658,10 +668,10 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
 - +：添加权限
 - -：移除权限
 - =：设定权限
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>示例：为 .bashrc 文件的所有用户添加写权限。</p>
-<pre class=" language-html"><code class="language-html"># chmod a+w .bashrc
-</code></pre>
+<pre class="line-numbers language-html"><code class="language-html"># chmod a+w .bashrc
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="默认权限"><a href="#默认权限" class="headerlink" title="默认权限"></a>默认权限</h2><ul>
 <li>文件默认权限：文件默认没有可执行权限，因此为 666，也就是 -rw-rw-rw- 。</li>
 <li>目录默认权限：目录必须要能够进入，也就是必须拥有可执行权限，因此为 777 ，也就是 drwxrwxrwx。</li>
@@ -672,79 +682,79 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
 <h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/1e46fd03-0cda-4d60-9b1c-0c256edaf6b2.png" width="450px"> </div><br>
 
 
-<pre class=" language-html"><code class="language-html"># ln [-sf] source_filename dist_filename
+<pre class="line-numbers language-html"><code class="language-html"># ln [-sf] source_filename dist_filename
 -s ：默认是实体链接，加 -s 为符号链接
 -f ：如果目标文件存在时，先删除目标文件
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h3 id="1-实体链接"><a href="#1-实体链接" class="headerlink" title="1. 实体链接"></a>1. 实体链接</h3><p>在目录下创建一个条目，记录着文件名与 inode 编号，这个 inode 就是源文件的 inode。</p>
 <p>删除任意一个条目，文件还是存在，只要引用数量不为 0。</p>
 <p>有以下限制：不能跨越文件系统、不能对目录进行链接。</p>
-<pre class=" language-html"><code class="language-html"># ln /etc/crontab .
+<pre class="line-numbers language-html"><code class="language-html"># ln /etc/crontab .
 # ll -i /etc/crontab crontab
 34474855 -rw-r--r--. 2 root root 451 Jun 10 2014 crontab
 34474855 -rw-r--r--. 2 root root 451 Jun 10 2014 /etc/crontab
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="2-符号链接"><a href="#2-符号链接" class="headerlink" title="2. 符号链接"></a>2. 符号链接</h3><p>符号链接文件保存着源文件所在的绝对路径，在读取时会定位到源文件上，可以理解为 Windows 的快捷方式。</p>
 <p>当源文件被删除了，链接文件就打不开了。</p>
 <p>因为记录的是路径，所以可以为目录建立符号链接。</p>
-<pre class=" language-html"><code class="language-html"># ll -i /etc/crontab /root/crontab2
+<pre class="line-numbers language-html"><code class="language-html"># ll -i /etc/crontab /root/crontab2
 34474855 -rw-r--r--. 2 root root 451 Jun 10 2014 /etc/crontab
 53745909 lrwxrwxrwx. 1 root root 12 Jun 23 22:31 /root/crontab2 -> /etc/crontab
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h2 id="获取文件内容"><a href="#获取文件内容" class="headerlink" title="获取文件内容"></a>获取文件内容</h2><h3 id="1-cat"><a href="#1-cat" class="headerlink" title="1. cat"></a>1. cat</h3><p>取得文件内容。</p>
-<pre class=" language-html"><code class="language-html"># cat [-AbEnTv] filename
+<pre class="line-numbers language-html"><code class="language-html"># cat [-AbEnTv] filename
 -n ：打印出行号，连同空白行也会有行号，-b 不会
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="2-tac"><a href="#2-tac" class="headerlink" title="2. tac"></a>2. tac</h3><p>是 cat 的反向操作，从最后一行开始打印。</p>
 <h3 id="3-more"><a href="#3-more" class="headerlink" title="3. more"></a>3. more</h3><p>和 cat 不同的是它可以一页一页查看文件内容，比较适合大文件的查看。</p>
 <h3 id="4-less"><a href="#4-less" class="headerlink" title="4. less"></a>4. less</h3><p>和 more 类似，但是多了一个向前翻页的功能。</p>
 <h3 id="5-head"><a href="#5-head" class="headerlink" title="5. head"></a>5. head</h3><p>取得文件前几行。</p>
-<pre class=" language-html"><code class="language-html"># head [-n number] filename
+<pre class="line-numbers language-html"><code class="language-html"># head [-n number] filename
 -n ：后面接数字，代表显示几行的意思
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="6-tail"><a href="#6-tail" class="headerlink" title="6. tail"></a>6. tail</h3><p>是 head 的反向操作，只是取得是后几行。</p>
 <h3 id="7-od"><a href="#7-od" class="headerlink" title="7. od"></a>7. od</h3><p>以字符或者十六进制的形式显示二进制文件。</p>
 <h2 id="指令与文件搜索"><a href="#指令与文件搜索" class="headerlink" title="指令与文件搜索"></a>指令与文件搜索</h2><h3 id="1-which"><a href="#1-which" class="headerlink" title="1. which"></a>1. which</h3><p>指令搜索。</p>
-<pre class=" language-html"><code class="language-html"># which [-a] command
+<pre class="line-numbers language-html"><code class="language-html"># which [-a] command
 -a ：将所有指令列出，而不是只列第一个
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="2-whereis"><a href="#2-whereis" class="headerlink" title="2. whereis"></a>2. whereis</h3><p>文件搜索。速度比较快，因为它只搜索几个特定的目录。</p>
-<pre class=" language-html"><code class="language-html"># whereis [-bmsu] dirname/filename
-</code></pre>
+<pre class="line-numbers language-html"><code class="language-html"># whereis [-bmsu] dirname/filename
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="3-locate"><a href="#3-locate" class="headerlink" title="3. locate"></a>3. locate</h3><p>文件搜索。可以用关键字或者正则表达式进行搜索。</p>
 <p>locate 使用 &#x2F;var&#x2F;lib&#x2F;mlocate&#x2F; 这个数据库来进行搜索，它存储在内存中，并且每天更新一次，所以无法用 locate 搜索新建的文件。可以使用 updatedb 来立即更新数据库。</p>
-<pre class=" language-html"><code class="language-html"># locate [-ir] keyword
+<pre class="line-numbers language-html"><code class="language-html"># locate [-ir] keyword
 -r：正则表达式
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="4-find"><a href="#4-find" class="headerlink" title="4. find"></a>4. find</h3><p>文件搜索。可以使用文件的属性和权限进行搜索。</p>
-<pre class=" language-html"><code class="language-html"># find [basedir] [option]
+<pre class="line-numbers language-html"><code class="language-html"># find [basedir] [option]
 example: find . -name "shadow*"
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>① 与时间有关的选项</strong>  </p>
-<pre class=" language-html"><code class="language-html">-mtime  n ：列出在 n 天前的那一天修改过内容的文件
+<pre class="line-numbers language-html"><code class="language-html">-mtime  n ：列出在 n 天前的那一天修改过内容的文件
 -mtime +n ：列出在 n 天之前 (不含 n 天本身) 修改过内容的文件
 -mtime -n ：列出在 n 天之内 (含 n 天本身) 修改过内容的文件
 -newer file ： 列出比 file 更新的文件
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>+4、4 和 -4 的指示的时间范围如下：</p>
 <div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/658fc5e7-79c0-4247-9445-d69bf194c539.png" width=""/> </div><br>
 
 <p><strong>② 与文件拥有者和所属群组有关的选项</strong>  </p>
-<pre class=" language-html"><code class="language-html">-uid n
+<pre class="line-numbers language-html"><code class="language-html">-uid n
 -gid n
 -user name
 -group name
 -nouser ：搜索拥有者不存在 /etc/passwd 的文件
 -nogroup：搜索所属群组不存在于 /etc/group 的文件
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>③ 与文件权限和名称有关的选项</strong>  </p>
-<pre class=" language-html"><code class="language-html">-name filename
+<pre class="line-numbers language-html"><code class="language-html">-name filename
 -size [+-]SIZE：搜寻比 SIZE 还要大 (+) 或小 (-) 的文件。这个 SIZE 的规格有：c: 代表 byte，k: 代表 1024bytes。所以，要找比 50KB 还要大的文件，就是 -size +50k
 -type TYPE
 -perm mode  ：搜索权限等于 mode 的文件
 -perm -mode ：搜索权限包含 mode 的文件
 -perm /mode ：搜索权限包含任一 mode 的文件
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h1 id="六、压缩与打包"><a href="#六、压缩与打包" class="headerlink" title="六、压缩与打包"></a>六、压缩与打包</h1><h2 id="压缩文件名"><a href="#压缩文件名" class="headerlink" title="压缩文件名"></a>压缩文件名</h2><p>Linux 底下有很多压缩文件名，常见的如下：</p>
 <table>
 <thead>
@@ -794,25 +804,25 @@ example: find . -name "shadow*"
 <p>经过 gzip 压缩过，源文件就不存在了。</p>
 <p>有 9 个不同的压缩等级可以使用。</p>
 <p>可以使用 zcat、zmore、zless 来读取压缩文件的内容。</p>
-<pre class=" language-html"><code class="language-html">$ gzip [-cdtv#] filename
+<pre class="line-numbers language-html"><code class="language-html">$ gzip [-cdtv#] filename
 -c ：将压缩的数据输出到屏幕上
 -d ：解压缩
 -t ：检验压缩文件是否出错
 -v ：显示压缩比等信息
 -# ： # 为数字的意思，代表压缩等级，数字越大压缩比越高，默认为 6
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="2-bzip2"><a href="#2-bzip2" class="headerlink" title="2. bzip2"></a>2. bzip2</h3><p>提供比 gzip 更高的压缩比。</p>
 <p>查看命令：bzcat、bzmore、bzless、bzgrep。</p>
-<pre class=" language-html"><code class="language-html">$ bzip2 [-cdkzv#] filename
+<pre class="line-numbers language-html"><code class="language-html">$ bzip2 [-cdkzv#] filename
 -k ：保留源文件
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="3-xz"><a href="#3-xz" class="headerlink" title="3. xz"></a>3. xz</h3><p>提供比 bzip2 更佳的压缩比。</p>
 <p>可以看到，gzip、bzip2、xz 的压缩比不断优化。不过要注意的是，压缩比越高，压缩的时间也越长。</p>
 <p>查看命令：xzcat、xzmore、xzless、xzgrep。</p>
-<pre class=" language-html"><code class="language-html">$ xz [-dtlkc#] filename
-</code></pre>
+<pre class="line-numbers language-html"><code class="language-html">$ xz [-dtlkc#] filename
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h2><p>压缩指令只能对一个文件进行压缩，而打包能够将多个文件打包成一个大文件。tar 不仅可以用于打包，也可以使用 gzip、bzip2、xz 将打包文件进行压缩。</p>
-<pre class=" language-html"><code class="language-html">$ tar [-z|-j|-J] [cv] [-f 新建的 tar 文件] filename...  ==打包压缩
+<pre class="line-numbers language-html"><code class="language-html">$ tar [-z|-j|-J] [cv] [-f 新建的 tar 文件] filename...  ==打包压缩
 $ tar [-z|-j|-J] [tv] [-f 已有的 tar 文件]              ==查看
 $ tar [-z|-j|-J] [xv] [-f 已有的 tar 文件] [-C 目录]    ==解压缩
 -z ：使用 zip；
@@ -824,7 +834,7 @@ $ tar [-z|-j|-J] [xv] [-f 已有的 tar 文件] [-C 目录]    ==解压缩
 -v ：在压缩/解压缩的过程中，显示正在处理的文件名；
 -f : filename：要处理的文件；
 -C 目录 ： 在特定目录解压缩。
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <table>
 <thead>
 <tr>
@@ -856,10 +866,10 @@ $ tar [-z|-j|-J] [xv] [-f 已有的 tar 文件] [-C 目录]    ==解压缩
 <h2 id="变量操作"><a href="#变量操作" class="headerlink" title="变量操作"></a>变量操作</h2><p>对一个变量赋值直接使用 &#x3D;。</p>
 <p>对变量取用需要在变量前加上 $ ，也可以用 ${} 的形式；</p>
 <p>输出变量使用 echo 命令。</p>
-<pre class=" language-bash"><code class="language-bash">$ x<span class="token operator">=</span>abc
+<pre class="line-numbers language-bash"><code class="language-bash">$ x<span class="token operator">=</span>abc
 $ <span class="token keyword">echo</span> <span class="token variable">$x</span>
 $ <span class="token keyword">echo</span> $<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;x&amp;#125;</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>变量内容如果有空格，必须使用双引号或者单引号。</p>
 <ul>
 <li>双引号内的特殊字符可以保留原本特性，例如 x&#x3D;”lang is $LANG”，则 x 的值为 lang is zh_TW.UTF-8；</li>
@@ -868,17 +878,17 @@ $ <span class="token keyword">echo</span> $<span class="token operator">&amp;</s
 <p>可以使用 `指令` 或者 $(指令) 的方式将指令的执行结果赋值给变量。例如 version&#x3D;$(uname -r)，则 version 的值为 4.15.0-22-generic。</p>
 <p>可以使用 export 命令将自定义变量转成环境变量，环境变量可以在子程序中使用，所谓子程序就是由当前 Bash 而产生的子 Bash。</p>
 <p>Bash 的变量可以声明为数组和整数数字。注意数字类型没有浮点数。如果不进行声明，默认是字符串类型。变量的声明使用 declare 命令：</p>
-<pre class=" language-html"><code class="language-html">$ declare [-aixr] variable
+<pre class="line-numbers language-html"><code class="language-html">$ declare [-aixr] variable
 -a ： 定义为数组类型
 -i ： 定义为整数类型
 -x ： 定义为环境变量
 -r ： 定义为 readonly 类型
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>使用 [ ] 来对数组进行索引操作：</p>
-<pre class=" language-bash"><code class="language-bash">$ array<span class="token punctuation">[</span>1<span class="token punctuation">]</span><span class="token operator">=</span>a
+<pre class="line-numbers language-bash"><code class="language-bash">$ array<span class="token punctuation">[</span>1<span class="token punctuation">]</span><span class="token operator">=</span>a
 $ array<span class="token punctuation">[</span>2<span class="token punctuation">]</span><span class="token operator">=</span>b
 $ <span class="token keyword">echo</span> $<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;array[1]&amp;#125;</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h2 id="指令搜索顺序"><a href="#指令搜索顺序" class="headerlink" title="指令搜索顺序"></a>指令搜索顺序</h2><ul>
 <li>以绝对或相对路径来执行指令，例如 &#x2F;bin&#x2F;ls 或者 .&#x2F;ls ；</li>
 <li>由别名找到该指令来执行；</li>
@@ -913,29 +923,29 @@ $ <span class="token keyword">echo</span> $<span class="token operator">&amp;</s
 <p>其中，有一个箭头的表示以覆盖的方式重定向，而有两个箭头的表示以追加的方式重定向。</p>
 <p>可以将不需要的标准输出以及标准错误输出重定向到 &#x2F;dev&#x2F;null，相当于扔进垃圾箱。</p>
 <p>如果需要将标准输出以及标准错误输出同时重定向到一个文件，需要将某个输出转换为另一个输出，例如 2&gt;&amp;1 表示将标准错误输出转换为标准输出。</p>
-<pre class=" language-bash"><code class="language-bash">$ <span class="token function">find</span> /home -name .bashrc <span class="token operator">></span> list 2<span class="token operator">></span><span class="token operator">&amp;</span>1
-</code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">find</span> /home -name .bashrc <span class="token operator">></span> list 2<span class="token operator">></span><span class="token operator">&amp;</span>1
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h1 id="八、管道指令"><a href="#八、管道指令" class="headerlink" title="八、管道指令"></a>八、管道指令</h1><p>管道是将一个命令的标准输出作为另一个命令的标准输入，在数据需要经过多个步骤的处理之后才能得到我们想要的内容时就可以使用管道。</p>
 <p>在命令之间使用 | 分隔各个管道命令。</p>
-<pre class=" language-bash"><code class="language-bash">$ <span class="token function">ls</span> -al /etc <span class="token operator">|</span> <span class="token function">less</span>
-</code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">ls</span> -al /etc <span class="token operator">|</span> <span class="token function">less</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="提取指令"><a href="#提取指令" class="headerlink" title="提取指令"></a>提取指令</h2><p>cut 对数据进行切分，取出想要的部分。</p>
 <p>切分过程一行一行地进行。</p>
-<pre class=" language-html"><code class="language-html">$ cut
+<pre class="line-numbers language-html"><code class="language-html">$ cut
 -d ：分隔符
 -f ：经过 -d 分隔后，使用 -f n 取出第 n 个区间
 -c ：以字符为单位取出区间
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>示例 1：last 显示登入者的信息，取出用户名。</p>
-<pre class=" language-html"><code class="language-html">$ last
+<pre class="line-numbers language-html"><code class="language-html">$ last
 root pts/1 192.168.201.101 Sat Feb 7 12:35 still logged in
 root pts/1 192.168.201.101 Fri Feb 6 12:13 - 18:46 (06:33)
 root pts/1 192.168.201.254 Thu Feb 5 22:37 - 23:53 (01:16)
 
 $ last | cut -d ' ' -f 1
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>示例 2：将 export 输出的信息，取出第 12 字符以后的所有字符串。</p>
-<pre class=" language-html"><code class="language-html">$ export
+<pre class="line-numbers language-html"><code class="language-html">$ export
 declare -x HISTCONTROL="ignoredups"
 declare -x HISTSIZE="1000"
 declare -x HOME="/home/dmtsai"
@@ -943,9 +953,9 @@ declare -x HOSTNAME="study.centos.vbird"
 .....(其他省略).....
 
 $ export | cut -c 12-
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="排序指令"><a href="#排序指令" class="headerlink" title="排序指令"></a>排序指令</h2><p><strong>sort</strong>   用于排序。</p>
-<pre class=" language-html"><code class="language-html">$ sort [-fbMnrtuk] [file or stdin]
+<pre class="line-numbers language-html"><code class="language-html">$ sort [-fbMnrtuk] [file or stdin]
 -f ：忽略大小写
 -b ：忽略最前面的空格
 -M ：以月份的名字来排序，例如 JAN，DEC
@@ -954,109 +964,109 @@ $ export | cut -c 12-
 -u ：相当于 unique，重复的内容只出现一次
 -t ：分隔符，默认为 tab
 -k ：指定排序的区间
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>示例：&#x2F;etc&#x2F;passwd 文件内容以 : 来分隔，要求以第三列进行排序。</p>
-<pre class=" language-html"><code class="language-html">$ cat /etc/passwd | sort -t ':' -k 3
+<pre class="line-numbers language-html"><code class="language-html">$ cat /etc/passwd | sort -t ':' -k 3
 root:x:0:0:root:/root:/bin/bash
 dmtsai:x:1000:1000:dmtsai:/home/dmtsai:/bin/bash
 alex:x:1001:1002::/home/alex:/bin/bash
 arod:x:1002:1003::/home/arod:/bin/bash
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>uniq</strong>   可以将重复的数据只取一个。</p>
-<pre class=" language-html"><code class="language-html">$ uniq [-ic]
+<pre class="line-numbers language-html"><code class="language-html">$ uniq [-ic]
 -i ：忽略大小写
 -c ：进行计数
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>示例：取得每个人的登录总次数</p>
-<pre class=" language-html"><code class="language-html">$ last | cut -d ' ' -f 1 | sort | uniq -c
+<pre class="line-numbers language-html"><code class="language-html">$ last | cut -d ' ' -f 1 | sort | uniq -c
 1
 6 (unknown
 47 dmtsai
 4 reboot
 7 root
 1 wtmp
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="双向输出重定向"><a href="#双向输出重定向" class="headerlink" title="双向输出重定向"></a>双向输出重定向</h2><p>输出重定向会将输出内容重定向到文件中，而   <strong>tee</strong>   不仅能够完成这个功能，还能保留屏幕上的输出。也就是说，使用 tee 指令，一个输出会同时传送到文件和屏幕上。</p>
-<pre class=" language-html"><code class="language-html">$ tee [-a] file
-</code></pre>
+<pre class="line-numbers language-html"><code class="language-html">$ tee [-a] file
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="字符转换指令"><a href="#字符转换指令" class="headerlink" title="字符转换指令"></a>字符转换指令</h2><p><strong>tr</strong>   用来删除一行中的字符，或者对字符进行替换。</p>
-<pre class=" language-html"><code class="language-html">$ tr [-ds] SET1 ...
+<pre class="line-numbers language-html"><code class="language-html">$ tr [-ds] SET1 ...
 -d ： 删除行中 SET1 这个字符串
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>示例，将 last 输出的信息所有小写转换为大写。</p>
-<pre class=" language-html"><code class="language-html">$ last | tr '[a-z]' '[A-Z]'
-</code></pre>
+<pre class="line-numbers language-html"><code class="language-html">$ last | tr '[a-z]' '[A-Z]'
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>   <strong>col</strong>   将 tab 字符转为空格字符。</p>
-<pre class=" language-html"><code class="language-html">$ col [-xb]
+<pre class="line-numbers language-html"><code class="language-html">$ col [-xb]
 -x ： 将 tab 键转换成对等的空格键
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>expand</strong>   将 tab 转换一定数量的空格，默认是 8 个。</p>
-<pre class=" language-html"><code class="language-html">$ expand [-t] file
+<pre class="line-numbers language-html"><code class="language-html">$ expand [-t] file
 -t ：tab 转为空格的数量
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>join</strong>   将有相同数据的那一行合并在一起。</p>
-<pre class=" language-html"><code class="language-html">$ join [-ti12] file1 file2
+<pre class="line-numbers language-html"><code class="language-html">$ join [-ti12] file1 file2
 -t ：分隔符，默认为空格
 -i ：忽略大小写的差异
 -1 ：第一个文件所用的比较字段
 -2 ：第二个文件所用的比较字段
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>paste</strong>   直接将两行粘贴在一起。</p>
-<pre class=" language-html"><code class="language-html">$ paste [-d] file1 file2
+<pre class="line-numbers language-html"><code class="language-html">$ paste [-d] file1 file2
 -d ：分隔符，默认为 tab
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h2 id="分区指令"><a href="#分区指令" class="headerlink" title="分区指令"></a>分区指令</h2><p><strong>split</strong>   将一个文件划分成多个文件。</p>
-<pre class=" language-html"><code class="language-html">$ split [-bl] file PREFIX
+<pre class="line-numbers language-html"><code class="language-html">$ split [-bl] file PREFIX
 -b ：以大小来进行分区，可加单位，例如 b, k, m 等
 -l ：以行数来进行分区。
 - PREFIX ：分区文件的前导名称
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h1 id="九、正则表达式"><a href="#九、正则表达式" class="headerlink" title="九、正则表达式"></a>九、正则表达式</h1><h2 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h2><p>g&#x2F;re&#x2F;p（globally search a regular expression and print)，使用正则表示式进行全局查找并打印。</p>
-<pre class=" language-html"><code class="language-html">$ grep [-acinv] [--color=auto] 搜寻字符串 filename
+<pre class="line-numbers language-html"><code class="language-html">$ grep [-acinv] [--color=auto] 搜寻字符串 filename
 -c ： 统计个数
 -i ： 忽略大小写
 -n ： 输出行号
 -v ： 反向选择，也就是显示出没有 搜寻字符串 内容的那一行
 --color=auto ：找到的关键字加颜色显示
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>示例：把含有 the 字符串的行提取出来（注意默认会有 –color&#x3D;auto 选项，因此以下内容在 Linux 中有颜色显示 the 字符串）</p>
-<pre class=" language-html"><code class="language-html">$ grep -n 'the' regular_express.txt
+<pre class="line-numbers language-html"><code class="language-html">$ grep -n 'the' regular_express.txt
 8:I can't finish the test.
 12:the symbol '*' is represented as start.
 15:You are the best is mean you are the no. 1.
 16:The world Happy is the same with "glad".
 18:google is the best tools for search keyword
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>示例：正则表达式 a{m,n} 用来匹配字符 a m~n 次，这里需要将 { 和 } 进行转移，因为它们在 shell 是有特殊意义的。</p>
-<pre class=" language-html"><code class="language-html">$ grep -n 'a\<span class="token entity" title="&#123;">&amp;#123;</span>2,5\<span class="token entity" title="&#125;">&amp;#125;</span>' regular_express.txt
-</code></pre>
+<pre class="line-numbers language-html"><code class="language-html">$ grep -n 'a\<span class="token entity" title="&#123;">&amp;#123;</span>2,5\<span class="token entity" title="&#125;">&amp;#125;</span>' regular_express.txt
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="printf"><a href="#printf" class="headerlink" title="printf"></a>printf</h2><p>用于格式化输出。它不属于管道命令，在给 printf 传数据时需要使用 $( ) 形式。</p>
-<pre class=" language-html"><code class="language-html">$ printf '%10s %5i %5i %5i %8.2f \n' $(cat printf.txt)
+<pre class="line-numbers language-html"><code class="language-html">$ printf '%10s %5i %5i %5i %8.2f \n' $(cat printf.txt)
     DmTsai    80    60    92    77.33
      VBird    75    55    80    70.00
        Ken    60    90    70    73.33
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="awk"><a href="#awk" class="headerlink" title="awk"></a>awk</h2><p>是由 Alfred Aho，Peter Weinberger 和 Brian Kernighan 创造，awk 这个名字就是这三个创始人名字的首字母。</p>
 <p>awk 每次处理一行，处理的最小单位是字段，每个字段的命名方式为：$n，n 为字段号，从 1 开始，$0 表示一整行。</p>
 <p>示例：取出最近五个登录用户的用户名和 IP。首先用 last -n 5 取出用最近五个登录用户的所有信息，可以看到用户名和 IP 分别在第 1 列和第 3 列，我们用 $1 和 $3 就能取出这两个字段，然后用 print 进行打印。</p>
-<pre class=" language-html"><code class="language-html">$ last -n 5
+<pre class="line-numbers language-html"><code class="language-html">$ last -n 5
 dmtsai pts/0 192.168.1.100 Tue Jul 14 17:32 still logged in
 dmtsai pts/0 192.168.1.100 Thu Jul 9 23:36 - 02:58 (03:22)
 dmtsai pts/0 192.168.1.100 Thu Jul 9 17:23 - 23:36 (06:12)
 dmtsai pts/0 192.168.1.100 Thu Jul 9 08:02 - 08:17 (00:14)
 dmtsai tty1 Fri May 29 11:55 - 12:11 (00:15)
-</code></pre>
-<pre class=" language-html"><code class="language-html">$ last -n 5 | awk '<span class="token entity" title="&#123;">&amp;#123;</span>print $1 "\t" $3<span class="token entity" title="&#125;">&amp;#125;</span>'
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-html"><code class="language-html">$ last -n 5 | awk '<span class="token entity" title="&#123;">&amp;#123;</span>print $1 "\t" $3<span class="token entity" title="&#125;">&amp;#125;</span>'
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>可以根据字段的某些条件进行匹配，例如匹配字段小于某个值的那一行数据。</p>
-<pre class=" language-html"><code class="language-html">$ awk '条件类型 1 <span class="token entity" title="&#123;">&amp;#123;</span>动作 1<span class="token entity" title="&#125;">&amp;#125;</span> 条件类型 2 <span class="token entity" title="&#123;">&amp;#123;</span>动作 2<span class="token entity" title="&#125;">&amp;#125;</span> ...' filename
-</code></pre>
+<pre class="line-numbers language-html"><code class="language-html">$ awk '条件类型 1 <span class="token entity" title="&#123;">&amp;#123;</span>动作 1<span class="token entity" title="&#125;">&amp;#125;</span> 条件类型 2 <span class="token entity" title="&#123;">&amp;#123;</span>动作 2<span class="token entity" title="&#125;">&amp;#125;</span> ...' filename
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>示例：&#x2F;etc&#x2F;passwd 文件第三个字段为 UID，对 UID 小于 10 的数据进行处理。</p>
-<pre class=" language-text"><code class="language-text">$ cat /etc/passwd | awk 'BEGIN &#123;FS=":"&#125; $3 < 10 &#123;print $1 "\t " $3&#125;'
+<pre class="line-numbers language-text"><code class="language-text">$ cat /etc/passwd | awk 'BEGIN &#123;FS=":"&#125; $3 < 10 &#123;print $1 "\t " $3&#125;'
 root 0
 bin 1
 daemon 2
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>awk 变量：</p>
 <table>
 <thead>
@@ -1079,35 +1089,35 @@ daemon 2
 </tr>
 </tbody></table>
 <p>示例：显示正在处理的行号以及每一行有多少字段</p>
-<pre class=" language-html"><code class="language-html">$ last -n 5 | awk '<span class="token entity" title="&#123;">&amp;#123;</span>print $1 "\t lines: " NR "\t columns: " NF<span class="token entity" title="&#125;">&amp;#125;</span>'
+<pre class="line-numbers language-html"><code class="language-html">$ last -n 5 | awk '<span class="token entity" title="&#123;">&amp;#123;</span>print $1 "\t lines: " NR "\t columns: " NF<span class="token entity" title="&#125;">&amp;#125;</span>'
 dmtsai lines: 1 columns: 10
 dmtsai lines: 2 columns: 10
 dmtsai lines: 3 columns: 10
 dmtsai lines: 4 columns: 10
 dmtsai lines: 5 columns: 9
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h1 id="十、进程管理"><a href="#十、进程管理" class="headerlink" title="十、进程管理"></a>十、进程管理</h1><h2 id="查看进程"><a href="#查看进程" class="headerlink" title="查看进程"></a>查看进程</h2><h3 id="1-ps"><a href="#1-ps" class="headerlink" title="1. ps"></a>1. ps</h3><p>查看某个时间点的进程信息。</p>
 <p>示例：查看自己的进程</p>
-<pre class=" language-sh"><code class="language-sh"># ps -l
-</code></pre>
+<pre class="line-numbers language-sh"><code class="language-sh"># ps -l
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>示例：查看系统所有进程</p>
-<pre class=" language-sh"><code class="language-sh"># ps aux
-</code></pre>
+<pre class="line-numbers language-sh"><code class="language-sh"># ps aux
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>示例：查看特定的进程</p>
-<pre class=" language-sh"><code class="language-sh"># ps aux | grep threadx
-</code></pre>
+<pre class="line-numbers language-sh"><code class="language-sh"># ps aux | grep threadx
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="2-pstree"><a href="#2-pstree" class="headerlink" title="2. pstree"></a>2. pstree</h3><p>查看进程树。</p>
 <p>示例：查看所有进程树</p>
-<pre class=" language-sh"><code class="language-sh"># pstree -A
-</code></pre>
+<pre class="line-numbers language-sh"><code class="language-sh"># pstree -A
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="3-top"><a href="#3-top" class="headerlink" title="3. top"></a>3. top</h3><p>实时显示进程信息。</p>
 <p>示例：两秒钟刷新一次</p>
-<pre class=" language-sh"><code class="language-sh"># top -d 2
-</code></pre>
+<pre class="line-numbers language-sh"><code class="language-sh"># top -d 2
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="4-netstat"><a href="#4-netstat" class="headerlink" title="4. netstat"></a>4. netstat</h3><p>查看占用端口的进程</p>
 <p>示例：查看特定端口的进程</p>
-<pre class=" language-sh"><code class="language-sh"># netstat -anp | grep port
-</code></pre>
+<pre class="line-numbers language-sh"><code class="language-sh"># netstat -anp | grep port
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="进程状态"><a href="#进程状态" class="headerlink" title="进程状态"></a>进程状态</h2><table>
 <thead>
 <tr>
@@ -1151,13 +1161,13 @@ dmtsai lines: 5 columns: 9
 <p>在子进程退出时，它的进程描述符不会立即释放，这是为了让父进程得到子进程信息，父进程通过 wait() 和 waitpid() 来获得一个已经退出的子进程的信息。</p>
 <div align="center"> <!-- <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/flow.png" width=""/> --> </div><br>
 
-<h2 id="wait"><a href="#wait" class="headerlink" title="wait()"></a>wait()</h2><pre class=" language-c"><code class="language-c">pid_t <span class="token function">wait</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token operator">*</span>status<span class="token punctuation">)</span>
-</code></pre>
+<h2 id="wait"><a href="#wait" class="headerlink" title="wait()"></a>wait()</h2><pre class="line-numbers language-c"><code class="language-c">pid_t <span class="token function">wait</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token operator">*</span>status<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>父进程调用 wait() 会一直阻塞，直到收到一个子进程退出的 SIGCHLD 信号，之后 wait() 函数会销毁子进程并返回。</p>
 <p>如果成功，返回被收集的子进程的进程 ID；如果调用进程没有子进程，调用就会失败，此时返回 -1，同时 errno 被置为 ECHILD。</p>
 <p>参数 status 用来保存被收集的子进程退出时的一些状态，如果对这个子进程是如何死掉的毫不在意，只想把这个子进程消灭掉，可以设置这个参数为 NULL。</p>
-<h2 id="waitpid"><a href="#waitpid" class="headerlink" title="waitpid()"></a>waitpid()</h2><pre class=" language-c"><code class="language-c">pid_t <span class="token function">waitpid</span><span class="token punctuation">(</span>pid_t pid<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">*</span>status<span class="token punctuation">,</span> <span class="token keyword">int</span> options<span class="token punctuation">)</span>
-</code></pre>
+<h2 id="waitpid"><a href="#waitpid" class="headerlink" title="waitpid()"></a>waitpid()</h2><pre class="line-numbers language-c"><code class="language-c">pid_t <span class="token function">waitpid</span><span class="token punctuation">(</span>pid_t pid<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">*</span>status<span class="token punctuation">,</span> <span class="token keyword">int</span> options<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>作用和 wait() 完全相同，但是多了两个可由用户控制的参数 pid 和 options。</p>
 <p>pid 参数指示一个子进程的 ID，表示只关心这个子进程退出的 SIGCHLD 信号。如果 pid&#x3D;-1 时，那么和 wait() 作用相同，都是关心所有子进程退出的 SIGCHLD 信号。</p>
 <p>options 参数主要有 WNOHANG 和 WUNTRACED 两个选项，WNOHANG 可以使 waitpid() 调用变成非阻塞的，也就是说它会立即返回，父进程可以继续执行其它任务。</p>
@@ -1210,12 +1220,12 @@ dmtsai lines: 5 columns: 9
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/libs/share/js/social-share.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -1388,23 +1398,23 @@ dmtsai lines: 5 columns: 9
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/codeBlock/codeBlockFuction.js"></script>
 
 
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
 
@@ -1426,7 +1436,7 @@ dmtsai lines: 5 columns: 9
 </div>
 
 
-<script src="/libs/tocbot/tocbot.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -1498,7 +1508,7 @@ dmtsai lines: 5 columns: 9
 
     <footer class="page-footer bg-color">
     
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/aplayer/APlayer.min.css">
 <style>
     .aplayer .aplayer-lrc p {
         
@@ -1514,7 +1524,7 @@ dmtsai lines: 5 columns: 9
         display: none;
         
         font-size: 15px;
-        color: #42b983;
+        color: #2980b9;
     }
 
     
@@ -1537,9 +1547,9 @@ dmtsai lines: 5 columns: 9
                    id="8304802843"
                    fixed='true'
                    autoplay='false'
-                   theme='#42b983'
+                   theme='#2980b9'
                    loop='all'
-                   order='random'
+                   order='list'
                    preload='auto'
                    volume='0.7'
                    list-folded='true'
@@ -1548,8 +1558,8 @@ dmtsai lines: 5 columns: 9
     </div>
 </div>
 
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/aplayer/Meting.min.js"></script>
 
     
 
@@ -1599,8 +1609,8 @@ dmtsai lines: 5 columns: 9
                         var years = days * 365;
                         var today = new Date();
                         var startYear = "2023";
-                        var startMonth = "3";
-                        var startDate = "28";
+                        var startMonth = "1";
+                        var startDate = "7";
                         var startHour = "0";
                         var startMinute = "0";
                         var startSecond = "0";
@@ -1822,12 +1832,12 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/materialize/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/aos/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/js/matery.js"></script>
 
     
 
@@ -1862,10 +1872,10 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/others/clicklove.js" async="async"></script>
     
     
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1878,7 +1888,7 @@ $(function () {
     <script type="text/javascript" color="0,0,255"
         pointColor="0,0,255" opacity='0.7'
         zIndex="-1" count="99"
-        src="/libs/background/canvas-nest.js"></script>
+        src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/background/canvas-nest.js"></script>
     
 
     
@@ -1886,7 +1896,7 @@ $(function () {
     
 
     
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fying925/fying925.github.io/libs/instantpage/instantpage.js" type="module"></script>
     
 
     <script type="text/javascript">
